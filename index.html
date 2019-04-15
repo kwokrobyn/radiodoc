@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WXDU Sounds and Stories</title>
+
+    <!-- Include Resource Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="css/foundation.min.css"/>
+
+    <!-- Include font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+		<!--
+			Include Resource Javascript
+
+			NOTE: These are for handling things outside of the scope of AmplitudeJS
+		-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/foundation.min.js"></script>
+
+		<!-- Include Amplitude JS -->
+		<script type="text/javascript" src="./dist/amplitude.js"></script>
+
+		<!-- Include Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+  </head>
+  <body>
+    <div class="grid-x">
+      <div class="logo-container large-12 medium-12">
+        <img id="logo" src="img/wxdulogo.png"/>
+      </div>
+    </div>
+    <div class="title-container large-12 medium-12"> 
+      Documenting WXDU Radio
+    </div>
+    <div class="subtitle-container large-12 medium-12"> 
+      Stories and Sounds
+    </div>
+    <!-- <div class="blurb-container large-12 medium-12"> 
+      <p>WXDU is the student-run radio station of Duke University. It was first broadcasted in 1950 on the AM frequency 650. Today, it is kept running by small and ever-changing group of DJs. Some stay longer than others. DJ's are encouraged to play from the station's preserved physical library. Each week, a small number of 'New Adds' are included. As the number of songs expands, so do the memories they hold. Songs with stories. </p>
+    </div> -->
+    <div class="grid-x">
+      <div class="large-6 medium-6 small-6 offset-1 large-centered medium-centered columns">
+        <div id="flat-black-player-container">
+            <div id="list-screen" class="slide-in-top">
+
+              <div id="list-screen-header" class="hide-playlist">
+                <img id="up-arrow" src="img/up.svg"/>
+                Hide Playlist
+              </div>
+
+              <div id="list">
+                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0" data-amplitude-playlist="0">
+                  <span class="song-number-now-playing">
+                    <span class="number">1</span>
+                    <img class="now-playing" src="img/now-playing.svg"/>
+                  </span>
+
+                  <div class="song-meta-container">
+                    <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="0" data-amplitude-playlist="0"></span>
+                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="0" data-amplitude-playlist="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="0" data-amplitude-playlist="0"></span></span>
+                  </div>
+
+                  <span class="song-duration">
+                    3:30
+                  <span>
+                </div>
+                <div class="test song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1" data-amplitude-playlist="0" data-amplitude-playlist="0">
+                  <span class="song-number-now-playing">
+                    <span class="number">2</span>
+                    <img class="now-playing" src="img/now-playing.svg"/>
+                  </span>
+
+                  <div class="song-meta-container">
+                    <span class="test song-name" data-amplitude-song-info="name" data-amplitude-song-index="1" data-amplitude-playlist="0"></span>
+                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="1" data-amplitude-playlist="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="1" data-amplitude-playlist="0"></span></span>
+                  </div>
+
+                  <span class="song-duration">
+                    3:16
+                  <span>
+                </div>
+                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2" data-amplitude-playlist="0">
+                  <span class="song-number-now-playing">
+                    <span class="number">3</span>
+                    <img class="now-playing" src="img/now-playing.svg"/>
+                  </span>
+
+                  <div class="song-meta-container">
+                    <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="2" data-amplitude-playlist="0"></span>
+                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="2" data-amplitude-playlist="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="2" data-amplitude-playlist="0"></span></span>
+                  </div>
+
+                  <span class="song-duration">
+                    3:32
+                  <span>
+                </div>
+                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="3" data-amplitude-playlist="0">
+                  <span class="song-number-now-playing">
+                    <span class="number">4</span>
+                    <img class="now-playing" src="img/now-playing.svg"/>
+                  </span>
+
+                  <div class="song-meta-container">
+                    <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="3" data-amplitude-playlist="0"></span>
+                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="3" data-amplitude-playlist="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="3" data-amplitude-playlist="0"></span></span>
+                  </div>
+
+                  <span class="song-duration">
+                    3:30
+                  <span>
+                </div>
+              </div>
+
+              <div id="list-screen-footer">
+                <div id="list-screen-meta-container">
+                  <span data-amplitude-song-info="name" class="song-name"></span>
+
+                  <div class="song-artist-album">
+                    <span data-amplitude-song-info="artist"></span>
+                  </div>
+                </div>
+                <div class="list-controls">
+                  <div class="list-previous amplitude-prev"></div>
+                  <div class="list-play-pause amplitude-play-pause"></div>
+                  <div class="list-next amplitude-next"></div>
+                </div>
+              </div>
+            </div>
+            <div id="player-screen">
+              <div class="player-header down-header">
+                <img id="down" src="img/down.svg"/>
+                Show Playlist
+              </div>
+              <div id="player-top">
+                <!---img data-amplitude-song-info="cover_art_url"/ -->
+              </div>
+              <div id="player-progress-bar-container">
+                <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+                <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+              </div>
+              <div id="player-middle">
+                <div id="time-container">
+                  <span class="amplitude-current-time time-container"></span>
+                  <span class="amplitude-duration-time time-container"></span>
+                </div>
+                <div id="meta-container">
+                  <span data-amplitude-song-info="name" class="song-name"></span>
+
+                  <div class="song-artist-album">
+                    <span data-amplitude-song-info="artist"></span>
+                  </div>
+                </div>
+              </div>
+              <div id="player-bottom">
+                <div id="control-container">
+
+                  <div id="shuffle-container">
+                    <i class="amplitude-shuffle amplitude-shuffle-off fas voice-activated fa-comment-dots fa-2x switcher" title="hi" id="shuffle"></i>
+                  </div>
+
+                  <div id="prev-container">
+                    <div class="amplitude-prev-playlist" id="previous"></div>
+                  </div>
+
+                  <div id="play-pause-container">
+                    <div class="amplitude-play-pause" id="play-pause"></div>
+                  </div>
+
+                  <div id="next-container">
+                    <div class="amplitude-next-playlist" id="next"></div>
+                  </div>
+
+                  <div id="repeat-container">
+                    <div class="amplitude-repeat" id="repeat"></div>
+                  </div>
+
+                </div>
+
+                <div id="volume-container">
+                  <img src="img/volume.svg"/><input type="range" class="amplitude-volume-slider" step=".1"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="columns large-centered large-8">
+          <div id="info-container">
+            <button type="button" class="switcher"> HI</button>
+          </div>
+        </div> -->
+        <div class="info-container-box large-6 medium-6 large-centered medium-centered columns">
+        <div class="info-container grid-x">
+            <div class="info-profile-container large-4 medium-4 large-centered medium-centered columns">
+              <img data-amplitude-song-info="cover_art_url"/>
+
+            </div>
+            <div class="info-text-container large-8 medium-8 large-centered medium-centered columns">
+              <p class="text-header">Sarah Blah Blah</p>
+              <p>I am a blh blrhiwourof woieruwerbkjs oirwoi</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+          
+  </body>
+  <script type="text/javascript">
+		Amplitude.init({
+      "bindings": {
+        37: 'prev',
+        39: 'next',
+        32: 'play_pause'
+      },
+			"songs": [
+				{
+					"name": "I Remember Darling",
+					"artist": "The Dex Romwebber Duo",
+					"album": "placeholder",
+					"url": "./songs/savannah2.mp3",
+					"cover_art_url": "./album-art/we-are-to-answer.jpg",
+          "info_header": "Savannah Best",
+          "info_text": "DJ since 2003"
+				},
+				{
+					"name": "I Remember Darling",
+					"artist": "The Dex Romwebber Duo",
+					"album": "placeholder",
+					"url": "./songs/savannah2x.mp3",
+					"cover_art_url": "./album-art/ask-the-dust.jpg",
+          "info_header": "Savannah Best",
+          "info_text": "placeholder"
+				},
+				{
+					"name": "It's Funky Enough",
+					"artist": "The D.O.C.",
+					"album": "placeholder",
+					"url": "../songs/jbully.mp3",
+					"cover_art_url": "./album-art/anvil.jpg",
+          "info_header": "Francis Roberts (DJ Robbie Roberts)",
+          "info_text": "placeholder"
+				},
+        {
+          "name": "It's Funky Enough",
+          "artist": "The D.O.C.",
+          "album": "placeholder",
+          "url": "../songs/jbullyx.mp3",
+          "cover_art_url": "./album-art/anvil.jpg",
+          "info_header": "Francis Roberts (DJ Robbie Roberts)",
+          "info_text": "placeholder"
+        },
+        {
+          "name": "Dirty Water",
+          "artist": "The Standells",
+          "album": "placeholder",
+          "url": "./songs/robby1.mp3",
+          "cover_art_url": "./album-art/we-are-to-answer.jpg",
+          "info_header": "Robby Poore",
+          "info_text": "placeholder"
+        },
+        {
+          "name": "Dirty Water",
+          "artist": "The Standells",
+          "album": "placeholder",
+          "url": "./songs/robby1.mp3",
+          "cover_art_url": "./album-art/we-are-to-answer.jpg",
+          "info_header": "Robby Poore",
+          "info_text": "placeholder"
+        },
+        {
+          "name": "Monk Time",
+          "artist": "The Monks",
+          "album": "placeholder",
+          "url": "./songs/robby2.mp3",
+          "cover_art_url": "./album-art/we-are-to-answer.jpg",
+          "info_header": "Robby Poore",
+          "info_text": "placeholder"
+        },
+        {
+          "name": "Monk Time",
+          "artist": "The Monks",
+          "album": "placeholder",
+          "url": "./songs/robby2.mp3",
+          "cover_art_url": "./album-art/we-are-to-answer.jpg",
+          "info_header": "Robby Poore",
+          "info_text": "placeholder"
+        },
+			],
+      "preload": true
+		});
+
+	</script>
+
+  <!--
+    Include UX functions JS
+
+    NOTE: These are for handling things outside of the scope of AmplitudeJS
+  -->
+  <script type="text/javascript" src="js/functions.js"></script>
+</html>
