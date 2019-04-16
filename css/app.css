@@ -569,14 +569,14 @@ div#flat-black-player-container {
   /*outline: solid black;*/
 }
 
-.player-header {
+/*.player-header {
   border-radius: 8px 8px 0px 0px;
 }
 
 #player-bottom {
   border-radius: 0px 0px 8px 8px;
 }
-
+*/
 
 .info-profile-container {
   /*outline: solid black;*/
@@ -604,6 +604,14 @@ div#flat-black-player-container {
   z-index: 10;
 }
 
+#logo:hover {
+  transform: scale(1.05); 
+}
+
+#logo { 
+  transition: all 0.2s ease-in-out; 
+  }
+
 .logo-container {
   text-align: right;
   padding: 30px;
@@ -626,12 +634,32 @@ div#flat-black-player-container {
   font-family: 'Roboto Mono', monospace;
 }
 
+.coverphoto {
+  margin-left: -80px;
+  max-height: 100px;
+}
+
 .blurb-container {
   text-align: center;
   max-width: 400px;
   font-family: 'Roboto Mono', monospace;
   margin: auto; 
   margin-bottom: 200px;
+}
+
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+  z-index: 100000; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
 }
 
 /*

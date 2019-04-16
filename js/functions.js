@@ -79,3 +79,17 @@ $(".fas").on('click', function() {
     $(".fas").addClass('voice-activated');
   }
 });
+
+$(".logo-container").on('click', function() {
+  if (document.getElementById("overlay").style.display == "block") {
+    document.getElementById("overlay").style.display = "none";
+  } else {
+    document.getElementById("overlay").style.display = "block";
+  }
+});
+
+$('#overlay').on('click', function() {
+  if (document.getElementById("overlay").style.display == "block") {
+    document.getElementById("overlay").style.display = "none";
+  } 
+});
