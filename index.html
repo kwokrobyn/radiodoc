@@ -9,6 +9,7 @@
     <!-- Include font -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 		<!--
@@ -63,70 +64,71 @@
 
               <div id="list-screen-header" class="hide-playlist">
                 <img id="up-arrow" src="img/up.svg"/>
-                Hide Playlist
+                Tracklist
               </div>
 
               <div id="list">
-                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0" data-amplitude-playlist="0">
+                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
                   <span class="song-number-now-playing">
                     <span class="number">1</span>
                     <img class="now-playing" src="img/now-playing.svg"/>
                   </span>
 
                   <div class="song-meta-container">
-                    <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="0" data-amplitude-playlist="0"></span>
-                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="0" data-amplitude-playlist="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="0" data-amplitude-playlist="0"></span></span>
+                    <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="0"></span>
+                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="0"></span></span>
                   </div>
 
                   <span class="song-duration">
                     3:30
                   <span>
                 </div>
-                <div class="test song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1" data-amplitude-playlist="0" data-amplitude-playlist="0">
+                <div class="test song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
                   <span class="song-number-now-playing">
                     <span class="number">2</span>
                     <img class="now-playing" src="img/now-playing.svg"/>
                   </span>
 
                   <div class="song-meta-container">
-                    <span class="test song-name" data-amplitude-song-info="name" data-amplitude-song-index="1" data-amplitude-playlist="0"></span>
-                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="1" data-amplitude-playlist="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="1" data-amplitude-playlist="0"></span></span>
+                    <span class="test song-name" data-amplitude-song-info="name" data-amplitude-song-index="2"></span>
+                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="2" ></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="2"></span></span>
                   </div>
 
                   <span class="song-duration">
                     3:16
                   <span>
                 </div>
-                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2" data-amplitude-playlist="0">
+                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="4">
                   <span class="song-number-now-playing">
                     <span class="number">3</span>
                     <img class="now-playing" src="img/now-playing.svg"/>
                   </span>
 
                   <div class="song-meta-container">
-                    <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="2" data-amplitude-playlist="0"></span>
-                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="2" data-amplitude-playlist="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="2" data-amplitude-playlist="0"></span></span>
+                    <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="4"></span>
+                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="4"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="4"></span></span>
                   </div>
 
                   <span class="song-duration">
                     3:32
                   <span>
                 </div>
-                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="3" data-amplitude-playlist="0">
+                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="6">
                   <span class="song-number-now-playing">
                     <span class="number">4</span>
                     <img class="now-playing" src="img/now-playing.svg"/>
                   </span>
 
                   <div class="song-meta-container">
-                    <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="3" data-amplitude-playlist="0"></span>
-                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="3" data-amplitude-playlist="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="3" data-amplitude-playlist="0"></span></span>
+                    <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="6"></span>
+                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="6"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="6"></span></span>
                   </div>
 
                   <span class="song-duration">
                     3:30
                   <span>
                 </div>
+
               </div>
 
               <div id="list-screen-footer">
@@ -147,10 +149,10 @@
             <div id="player-screen">
               <div class="player-header down-header">
                 <img id="down" src="img/down.svg"/>
-                Show Playlist
+                
               </div>
               <div id="player-top">
-                <img data-amplitude-song-info="cover_art_url"/>
+                <!-- <img data-amplitude-song-info="cover_art_url"/> -->
               </div>
               <div id="player-progress-bar-container">
                 <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
@@ -165,7 +167,7 @@
                   <span data-amplitude-song-info="name" class="song-name"></span>
 
                   <div class="song-artist-album">
-                    <span data-amplitude-song-info="artist"></span>
+                    <span data-amplitude-song-info="artist"></span> - <span data-amplitude-song-info="album" ></span>
                   </div>
                 </div>
               </div>
@@ -234,8 +236,8 @@
 				{
 					"name": "I Remember Darling",
 					"artist": "The Dex Romwebber Duo",
-					"album": "placeholder",
-					"url": "./songs/savannah2.mp3",
+					"album": "DJ Savannah Best",
+					"url": "./songs/savannah.mp3",
 					"cover_art_url": "./album-art/savannah.jpg",
           "info_header": "Savannah Best",
           "info_text": "DJ since 2003"
@@ -244,7 +246,7 @@
 					"name": "I Remember Darling",
 					"artist": "The Dex Romwebber Duo",
 					"album": "placeholder",
-					"url": "./songs/savannah2x.mp3",
+					"url": "./songs/savannahx.mp3",
 					"cover_art_url": "./album-art/savannahbw.jpg",
           "info_header": "Savannah Best",
           "info_text": "placeholder"
@@ -252,10 +254,10 @@
 				{
 					"name": "It's Funky Enough",
 					"artist": "The D.O.C.",
-					"album": "placeholder",
+					"album": "DJ Robbie Roberts",
 					"url": "./songs/jbully.mp3",
 					"cover_art_url": "./album-art/jbully.jpg",
-          "info_header": "Francis Roberts (DJ Robbie Roberts)",
+          "info_header": "DJ Robbie Roberts",
           "info_text": "placeholder"
 				},
         {
@@ -264,23 +266,23 @@
           "album": "placeholder",
           "url": "./songs/jbullyx.mp3",
           "cover_art_url": "./album-art/jbullybw.jpg",
-          "info_header": "Francis Roberts (DJ Robbie Roberts)",
+          "info_header": "DJ Robbie Roberts",
           "info_text": "placeholder"
         },
         {
           "name": "Dirty Water",
           "artist": "The Standells",
-          "album": "placeholder",
+          "album": "DJ Robby Poore",
           "url": "./songs/robby1.mp3",
           "cover_art_url": "./album-art/robby.jpg",
-          "info_header": "Robby Poore",
+          "info_header": "DJ Robby Poore",
           "info_text": "placeholder"
         },
         {
           "name": "Dirty Water",
           "artist": "The Standells",
           "album": "placeholder",
-          "url": "./songs/robby1.mp3",
+          "url": "./songs/robby1x.mp3",
           "cover_art_url": "./album-art/robbybw.jpg",
           "info_header": "Robby Poore",
           "info_text": "placeholder"
@@ -288,17 +290,17 @@
         {
           "name": "Monk Time",
           "artist": "The Monks",
-          "album": "placeholder",
+          "album": "DJ Robby Poore",
           "url": "./songs/robby2.mp3",
           "cover_art_url": "./album-art/robby.jpg",
-          "info_header": "Robby Poore",
+          "info_header": "DJ Robby Poore",
           "info_text": "placeholder"
         },
         {
           "name": "Monk Time",
           "artist": "The Monks",
           "album": "placeholder",
-          "url": "./songs/robby2.mp3",
+          "url": "./songs/robby2x.mp3",
           "cover_art_url": "./album-art/robbybw.jpg",
           "info_header": "Robby Poore",
           "info_text": "placeholder"
