@@ -674,6 +674,10 @@ div#flat-black-player-container {
   -ms-transform: translate(-50%,-50%);
 }
 
+.photo-grid {
+  max-width: 500px;
+}
+
 /*
   4. Pages
 */
