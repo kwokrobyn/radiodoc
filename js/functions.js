@@ -1,9 +1,47 @@
 $(document).ready(function() {
+  // setTimeout(function(){ 
+  //   document.getElementById("helper-logo").style.display = "block";
+  //   $('#helper-logo').addClass("fade-in");
+  // }, 1000);
 });
+
+// $('body *:not(.help-toggle)').on('click', function() {
+//   if (document.getElementById("helper-logo").style.display == "block") {
+//     document.getElementById("helper-logo").style.display = "none";
+//     //$('#helper-logo').removeClass("fade-in");
+//   } 
+// });
 
 window.onkeydown = function(e) {
     return !(e.keyCode == 32);
 };
+
+$('.help-toggle').on('click', function() {
+  if (document.getElementById("helper-logo").style.display == "block") {
+    document.getElementById("helper-logo").style.display = "none";
+  } else {
+    document.getElementById("helper-logo").style.display = "block";
+  }
+
+  if (document.getElementById("overlay-2").style.display == "block") {
+    document.getElementById("overlay-2").style.display = "none";
+  } else {
+    document.getElementById("overlay-2").style.display = "block";
+  }
+
+  if (document.getElementById("switcher-help").style.display == "block") {
+    document.getElementById("switcher-help").style.display = "none";
+  } else {
+    document.getElementById("switcher-help").style.display = "block";
+  }
+
+  if (document.getElementById("tracklist-help").style.display == "block") {
+    document.getElementById("tracklist-help").style.display = "none";
+  } else {
+    document.getElementById("tracklist-help").style.display = "block";
+  }
+
+});
 
 /*
   Handles a click on the down button to slide down the playlist.
@@ -80,7 +118,7 @@ $(".fas").on('click', function() {
   }
 });
 
-$(".logo-container").on('click', function() {
+$("#logo").on('click', function() {
   if (document.getElementById("overlay").style.display == "block") {
     document.getElementById("overlay").style.display = "none";
   } else {
@@ -92,4 +130,19 @@ $('#overlay').on('click', function() {
   if (document.getElementById("overlay").style.display == "block") {
     document.getElementById("overlay").style.display = "none";
   } 
+});
+
+$('#overlay-2').on('click', function() {
+  if (document.getElementById("overlay-2").style.display == "block") {
+    document.getElementById("overlay-2").style.display = "none";
+  } 
+  if (document.getElementById("helper-logo").style.display == "block") {
+    document.getElementById("helper-logo").style.display = "none";
+  }
+  if (document.getElementById("switcher-help").style.display == "block") {
+    document.getElementById("switcher-help").style.display = "none";
+  }
+  if (document.getElementById("tracklist-help").style.display == "block") {
+    document.getElementById("tracklist-help").style.display = "none";
+  }
 });

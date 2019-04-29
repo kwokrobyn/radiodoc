@@ -29,9 +29,14 @@
   <body>
     <div class="grid-x">
       <div class="logo-container large-12 medium-12">
+        <div class="help-toggle"><i class="far fa-question-circle fa-4x"></i></div>
         <img id="logo" src="img/wxdulogo.png"/>
+        <div id="helper-logo">
+          <p>Click for Introduction<i class="fas fa-angle-double-up logo-arrow"></i></p>
+        </div>
       </div>
     </div>
+    <div id="overlay-2"></div>
     <div id="overlay">
       <div id="overlay-text">
         <p>
@@ -190,7 +195,7 @@
                   </div>
 
                   <span class="song-duration">
-                    8:42
+                    8:30
                   <span>
                 </div>
 
@@ -230,7 +235,9 @@
             <div id="player-screen">
               <div class="player-header down-header">
                 <img id="down" src="img/down.svg"/>
-                
+                <div id="tracklist-help">
+                      <p>See Tracklist<i class="fas fa-angle-double-down logo-arrow"></i></p>
+                </div>
               </div>
               <div id="player-top">
                 <!-- <img data-amplitude-song-info="cover_art_url"/> -->
@@ -257,6 +264,9 @@
 
                   <div id="shuffle-container">
                     <i class="amplitude-shuffle amplitude-shuffle-off fas voice-activated fa-comment-dots fa-2x switcher" title="hi" id="shuffle"></i>
+                    <div id="switcher-help">
+                      <p>Toggle Voice<i class="fas fa-angle-double-right logo-arrow"></i></p>
+                    </div>
                   </div>
 
                   <div id="prev-container">
@@ -318,8 +328,13 @@
 					"url": "./songs/savannah.mp3",
 					"cover_art_url": "./album-art/savannah.jpg",
           "info_header": "Savannah Best",
-          "info_text": "DJ since 2003"
-				},
+          "info_text": "DJ since 2003",
+          "time_callbacks": {
+            191: function(){
+              Amplitude.skipTo(0, 2);
+            },
+				  },
+        },
 				{
 					"name": "I Remember Darling",
 					"artist": "The Dex Romwebber Duo",
@@ -327,7 +342,12 @@
 					"url": "./songs/savannahx.mp3",
 					"cover_art_url": "./album-art/savannahbw.jpg",
           "info_header": "Savannah Best",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            191: function(){
+              Amplitude.skipTo(0, 3);
+            },
+          },
 				},
         {
           "name": "Recordai",
@@ -336,7 +356,12 @@
           "url": "./songs/georg.mp3",
           "cover_art_url": "./album-art/robbybw.jpg",
           "info_header": "Georg Patterson",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            270: function(){
+              Amplitude.skipTo(0, 4);
+            },
+          },
         },
         {
           "name": "Recordai",
@@ -345,7 +370,12 @@
           "url": "./songs/georgx.mp3",
           "cover_art_url": "./album-art/robbybw.jpg",
           "info_header": "Georg Patterson",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            270: function(){
+              Amplitude.skipTo(0, 5);
+            },
+          },
         },
         {
           "name": "Monk Time",
@@ -354,7 +384,12 @@
           "url": "./songs/robby2.mp3",
           "cover_art_url": "./album-art/robby.jpg",
           "info_header": "DJ Robby Poore",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            170: function(){
+              Amplitude.skipTo(0, 6);
+            },
+          },
         },
         {
           "name": "Monk Time",
@@ -363,7 +398,12 @@
           "url": "./songs/robby2x.mp3",
           "cover_art_url": "./album-art/robbybw.jpg",
           "info_header": "Robby Poore",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            170: function(){
+              Amplitude.skipTo(0, 7);
+            },
+          },
         },
         {
           "name": "Dirty Water",
@@ -372,7 +412,12 @@
           "url": "./songs/robby1.mp3",
           "cover_art_url": "./album-art/robby.jpg",
           "info_header": "DJ Robby Poore",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            180: function(){
+              Amplitude.skipTo(0, 8);
+            },
+          },
         },
         {
           "name": "Dirty Water",
@@ -381,7 +426,12 @@
           "url": "./songs/robby1x.mp3",
           "cover_art_url": "./album-art/robbybw.jpg",
           "info_header": "Robby Poore",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            180: function(){
+              Amplitude.skipTo(0, 9);
+            },
+          },
         },
 				{
 					"name": "It's Funky Enough",
@@ -390,7 +440,12 @@
 					"url": "./songs/jbully.mp3",
 					"cover_art_url": "./album-art/jbully.jpg",
           "info_header": "DJ Robbie Roberts",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            296: function(){
+              Amplitude.skipTo(0, 10);
+            },
+          },
 				},
         {
           "name": "It's Funky Enough",
@@ -399,7 +454,12 @@
           "url": "./songs/jbullyx.mp3",
           "cover_art_url": "./album-art/jbullybw.jpg",
           "info_header": "DJ Robbie Roberts",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            296: function(){
+              Amplitude.skipTo(0, 11);
+            },
+          },
         },
         {
           "name": "Witch",
@@ -408,7 +468,12 @@
           "url": "./songs/will.mp3",
           "cover_art_url": "./album-art/robbybw.jpg",
           "info_header": "Will Atkinson",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            418: function(){
+              Amplitude.skipTo(0, 12);
+            },
+          },
         },
         {
           "name": "Witch",
@@ -417,7 +482,12 @@
           "url": "./songs/willx.mp3",
           "cover_art_url": "./album-art/robbybw.jpg",
           "info_header": "Will Atkinson",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            418: function(){
+              Amplitude.skipTo(0, 13);
+            },
+          },
         },
         {
           "name": "Abstractions (Excerpt)",
@@ -426,7 +496,12 @@
           "url": "./songs/lee.mp3",
           "cover_art_url": "./album-art/robbybw.jpg",
           "info_header": "Lee Nisbet",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            510: function(){
+              Amplitude.skipTo(0, 14);
+            },
+          },
         },
         {
           "name": "Abstractions (Excerpt)",
@@ -435,7 +510,12 @@
           "url": "./songs/leex.mp3",
           "cover_art_url": "./album-art/robbybw.jpg",
           "info_header": "Lee Nisbet",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            510: function(){
+              Amplitude.skipTo(0, 15);
+            },
+          },
         },
         {
           "name": "California Stars",
@@ -444,7 +524,12 @@
           "url": "./songs/sarah.mp3",
           "cover_art_url": "./album-art/robbybw.jpg",
           "info_header": "Sarah Reichman",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            295: function(){
+              Amplitude.skipTo(0, 0);
+            },
+          },
         },
         {
           "name": "California Stars",
@@ -453,7 +538,12 @@
           "url": "./songs/sarahx.mp3",
           "cover_art_url": "./album-art/robbybw.jpg",
           "info_header": "Sarah Reichman",
-          "info_text": "placeholder"
+          "info_text": "placeholder",
+          "time_callbacks": {
+            295: function(){
+              Amplitude.skipTo(0, 1);
+            },
+          },
         },
 
 
